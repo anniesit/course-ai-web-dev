@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+h1 {
+    font-size: 32px;
+}
+
+h2 {
+    font-size: 24px;
+}
+
+h3 {
+    font-size: 18.72px;
+}
+
+h4 {
+    font-size: 16px;
+}
+
+h5 {
+    font-size: 13.28px;
+}
+
+h6 {
+    font-size: 10.72px;
+}
+
+h1,h2,h3,h4,h5,h6 {
+    font-weight: 700;
+}
+
+a {
+    color: #004da4;
+    text-decoration: underline dotted;
+    text-underline-offset: 3px;
+    transition: color 0.2s ease, transform 0.2s ease;
+    transform: translateY(0);
+    display: inline-block;
+}
+
+a:hover {
+    transform: translateY(-2px);
+    background: linear-gradient(to right, #ffd467 50%, transparent 50%);
+    background-size: 200% 100%;
+    background-position: right bottom;
+    transition: all 0.3s ease;
+    animation: swipeHighlight 0.3s ease forwards;
+}
+@keyframes swipeHighlight {
+    from {
+        background-position: right bottom;
+    }
+    to { 
+        background-position: left bottom;
+    }
+}
