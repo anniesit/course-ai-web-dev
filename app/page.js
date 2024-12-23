@@ -1,4 +1,5 @@
 // 寫註解可使用快捷鍵: ctrl + / (cmd + /)
+import Link from 'next/link';
 import TripCard from '@/components/TripCard';
 import tripList from '@/data/trip-list';
 
@@ -14,6 +15,8 @@ export default function Home() {
         <div className="container mx-auto px-4 py-4">
           <h1>HTML &amp; CSS</h1>
           <p>關於HTML標籤的更多資訊可參考 <a href="https://www.w3schools.com/html/" target="_blank">W3Schools HTML</a></p>
+          <Link href="/about" className="inline-block mt-2">About</Link>
+          <Link href="/faq" className="inline-block mt-2 ml-4">FAQ</Link>
         </div>
       </header>
       <section id="tripListSection" className="container mx-auto my-4 px-4">
